@@ -1,17 +1,16 @@
-# Uebung 17: Test-Workflow nachvollziehen
+# Uebung 18: Docker Build per Workflow verstehen
 
-Ziel: Verstehen, wie eine Pipeline Abhaengigkeiten installiert und Tests ausfuehrt.
+Ziel: Nachvollziehen, wie ein Workflow ein Docker Image baut.
 
 ## Dateien
 
-- `.github/workflows/test.yml`: Workflow fuer Install und Test
-- `app.py`: kleine Python-Funktion
-- `test_app.py`: einfacher Test
-- `requirements.txt`: benoetigte Abhaengigkeiten
+- `.github/workflows/docker-build.yml`: Workflow fuer Docker Build
+- `Dockerfile`: minimales Image
+- `index.html`: statische Startseite
 
 ## Aufgaben
 
-1. Oeffne den Workflow.
-2. Benenne die Reihenfolge der Steps.
-3. Erklaere, welcher Step die Tests ausfuehrt.
-4. Ueberlege, was bei einem fehlschlagenden Test passiert.
+1. Oeffne Workflow und Dockerfile.
+2. Finde den Step, der `docker build` ausfuehrt.
+3. Erklaere, welche Dateien dafuer im Repository liegen muessen.
+4. Benenne, was der Runner fuer den Build bereitstellt.
