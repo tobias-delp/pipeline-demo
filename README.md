@@ -1,17 +1,15 @@
-# Uebung 17: Test-Workflow nachvollziehen
+# Uebung 19: Multi-Job Pipeline mit Artifact lesen
 
-Ziel: Verstehen, wie eine Pipeline Abhaengigkeiten installiert und Tests ausfuehrt.
+Ziel: Verstehen, wie ein Job eine Datei erzeugt und ein anderer Job sie weiterverwendet.
 
 ## Dateien
 
-- `.github/workflows/test.yml`: Workflow fuer Install und Test
-- `app.py`: kleine Python-Funktion
-- `test_app.py`: einfacher Test
-- `requirements.txt`: benoetigte Abhaengigkeiten
+- `.github/workflows/multi-job.yml`: Workflow mit Build- und Test-Job
+- `message.txt`: Eingabedatei fuer den Build-Schritt
 
 ## Aufgaben
 
 1. Oeffne den Workflow.
-2. Benenne die Reihenfolge der Steps.
-3. Erklaere, welcher Step die Tests ausfuehrt.
-4. Ueberlege, was bei einem fehlschlagenden Test passiert.
+2. Finde den Build-Job und den Test-Job.
+3. Benenne das Artifact.
+4. Erklaere, warum `needs: build` wichtig ist.
