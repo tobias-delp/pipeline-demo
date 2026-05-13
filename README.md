@@ -1,19 +1,17 @@
-# Uebung 20: Secret und Deploy-Workflow einordnen
+# Uebung 16: Ersten Workflow lesen und ausloesen
 
-Ziel: Verstehen, wie ein manueller Deploy-Workflow aufgebaut ist und wie Secrets eingebunden werden.
+Ziel: Einen minimalen GitHub-Actions-Workflow verstehen.
 
 ## Dateien
 
-- `.github/workflows/deploy.yml`: Workflow mit `workflow_dispatch`
-- `deploy.sh`: einfacher Deploy-Platzhalter
+- `.github/workflows/ci.yml`: einfacher Workflow mit `push` als Trigger
 
 ## Aufgaben
 
 1. Oeffne den Workflow.
-2. Finde den manuellen Trigger.
-3. Benenne das verwendete Secret.
-4. Erklaere, warum Deployments oft getrennt von normalen Push-Workflows laufen.
+2. Identifiziere `on`, `jobs`, `runs-on` und `steps`.
+3. Erklaere, welche Ausgabe der Workflow erzeugt.
 
 ## Hinweis
 
-Das Secret `DEPLOY_TOKEN` ist hier nur als Platzhalter referenziert und muss in GitHub gesetzt werden.
+Der Workflow laeuft in GitHub nach einem Push auf dieses Repository.
