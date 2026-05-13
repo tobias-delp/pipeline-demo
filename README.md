@@ -1,17 +1,17 @@
-# Uebung 16: Ersten Workflow lesen und ausloesen
+# Uebung 17: Test-Workflow nachvollziehen
 
-Ziel: Einen minimalen GitHub-Actions-Workflow verstehen.
+Ziel: Verstehen, wie eine Pipeline Abhaengigkeiten installiert und Tests ausfuehrt.
 
 ## Dateien
 
-- `.github/workflows/ci.yml`: einfacher Workflow mit `push` als Trigger
+- `.github/workflows/test.yml`: Workflow fuer Install und Test
+- `app.py`: kleine Python-Funktion
+- `test_app.py`: einfacher Test
+- `requirements.txt`: benoetigte Abhaengigkeiten
 
 ## Aufgaben
 
 1. Oeffne den Workflow.
-2. Identifiziere `on`, `jobs`, `runs-on` und `steps`.
-3. Erklaere, welche Ausgabe der Workflow erzeugt.
-
-## Hinweis
-
-Der Workflow laeuft in GitHub nach einem Push auf dieses Repository.
+2. Benenne die Reihenfolge der Steps.
+3. Erklaere, welcher Step die Tests ausfuehrt.
+4. Ueberlege, was bei einem fehlschlagenden Test passiert.
