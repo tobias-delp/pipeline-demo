@@ -13,3 +13,4 @@ Ziel: Verstehen, wie ein Job eine Datei erzeugt und ein anderer Job sie weiterve
 2. Finde den Build-Job und den Test-Job.
 3. Benenne das Artifact.
 4. Erklaere, warum `needs: build` wichtig ist.
+5. hallo welt
