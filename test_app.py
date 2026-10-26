@@ -1,4 +1,4 @@
-from app import add
+from app import add, div
 
 
 def test_add():
@@ -11,3 +11,7 @@ def test_add_negative():
 
 def test_add_failed():
     assert add(2, 2) == 4
+
+
+def test_div_zero():
+    assert div(12, 0) == 0
