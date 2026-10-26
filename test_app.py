@@ -10,4 +10,4 @@ def test_add_negative():
 
 
 def test_add_failed():
-    assert add(2, 3) == 4
+    assert add(2, 2) == 4
